@@ -8,6 +8,9 @@ namespace VPShelter
 {
     class Volunteer : Employee
     {
+        private string treat;
+
+        public string Treat { get; set; }
 
         public void Water(VitrualPetShelter name)
         {

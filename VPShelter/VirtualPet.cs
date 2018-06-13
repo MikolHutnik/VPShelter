@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VPShelter
 {
-    class VirtualPet: VitrualPetShelter
+    public class VirtualPet
     {
          // fields
         private int hunger;
@@ -17,9 +17,11 @@ namespace VPShelter
         private bool boredomAlert;
         private string name;
         private string description;
+        
 
         // properties
         public string Description { get; set; }
+      
 
         public bool HungerAlert
         {
@@ -159,7 +161,14 @@ namespace VPShelter
             return Name;
         }
 
- 
+        public string SetDescription(string description)
+        {
+            this.Description = description;
+            return Description;
+        }
+
+        //public void Status();
+
 
         public void DragonPic()
         {

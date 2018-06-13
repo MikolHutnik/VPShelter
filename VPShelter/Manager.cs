@@ -14,7 +14,8 @@ namespace VPShelter
 
         public void Adopt(VitrualPetShelter test, NewPets name)
         {
-            test.PetList.Remove(name);
+            
+           test.PetList.Remove(name);
         }
 
         public override void ActiveDuty()
